@@ -1,0 +1,105 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+.bg-white {
+  background-color:rgb(14, 14, 14);;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+nav{
+  background-color:rgb(14, 14, 14);
+  
+}
+
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+#HomeBack{
+ background-image: url("../images/mountainDrift.jpg");
+ height: 900px;
+ width: 900px;
+ background-size: 900px;
+}
+
+/* Sign in ------------------------------------------------------------- */
+
+.login{
+  width: 250px;
+  height: 500px;
+  background-image: url("../images/payMeLogin.jpg");
+  background-size: 334px;
+  margin-left: 100px;
+  
+  /* <img src="~/images/payMeLogin.jpg" alt="Image Of Neon Person" width="250" height="300"> */
+}
+.lg1{
+  width: 225px;
+  height: 200px;
+  
+  
+}
+.loginForm{
+  width: 225px;
+  height: 200px;
+  background-color: white;
+  margin-left: 110px;
+  
+}
+
+form{
+  line-height: 10px;
+}
+
+
+.btn{
+  width: 218px;
+  
+}

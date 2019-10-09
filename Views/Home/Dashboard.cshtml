@@ -1,0 +1,56 @@
+@model DashboardViewModel
+<div class="row">
+    <div class="col">
+        <h3>Welcome, @Model.User.FirstName </h3>
+        
+    </div>
+    <div class="col">
+        <a href="Logout"> LogOut </a>
+        
+    </div>
+
+</div>
+<p>Current Balance: $@Model.User.Balance.ToString("F") </p>
+<div class="row"> 
+    <div class="col">
+<p>Withdraw: </p> 
+<form asp-action="PayUp" asp-controller="Home" method="POST">
+    <span asp-validation-for="Transaction.Amount"></span>
+    <label asp-for="Transaction.Amount"></label><br>
+    <input asp-for="Transaction.Amount"> <br><br>
+    <button type="submit" class="btn btn-warning">PayUp</button>
+</form>
+        
+    </div>
+    <div class="col">
+<p>Deposit </p> 
+<form asp-action="GetPayd" asp-controller="Home" method="POST">
+    <span asp-validation-for="Transaction.Amount"></span>
+    <label asp-for="Transaction.Amount"></label><br>
+    <input asp-for="Transaction.Amount"> <br><br>
+    <button type="submit" class="btn btn-dark">GetPayd</button>
+</form>
+
+    </div>
+</div>
+
+
+
+    <div class="row">
+        <table class="table-striped" >
+            <tr>
+              <th>Amount</th>
+              <th>Date</th>
+            </tr>
+            @foreach (Transaction item in Model.Transactions)
+            {
+                <tr>
+                    <td>@item.Amount</td>
+                    <td>@item.CreatedAt</td>
+                </tr> 
+            }               
+              
+   
+
+          </table>
+    </div>
